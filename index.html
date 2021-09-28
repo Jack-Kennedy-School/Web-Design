@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-image: url('https://media.cntraveler.com/photos/57fea9ec8584f8cd20e65f15/16:9/w_2580,c_limit/Aerial-One&OnlyReethiRah-Maldives-CRHotel.jpg');
+}
+div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    text-align: center;
+}
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.center {
+	  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
+</style>
+<!--
+2021-09-28: Yes, programming is fun, JFK, but I want to encourage you to
+focus on designing the user interface with HTML and CSS before you dive into
+JavaScript. ~ JE
+-->
+</head>
+<body>
+<div class="container">
+	<div class="vertical-center">
+		<div class="center">
+  <button onclick="myFunction()">Destroy Walter</button>
+  <button onclick="myOtherFunction()">Fix Walter</button>
+  <button onclick="myThirdFunction()">Musical Walter</button>
+	</div>
+	</div>
+</div>
+  <hr>
+  <div id="myDIV" style="display:none">
+  <a href="https://en.wikipedia.org/wiki/Walter_(wrestler)">
+    <img src="https://c.tenor.com/5DZmRPdzqF4AAAAM/walter-dog.gif" width="500" height="500">
+  </a>
+  </div>
+
+  <div id="DIVTWO" style="display:block">
+    <img src="https://morningsidemaryland.com/wp-content/uploads/2020/11/Screenshot-26-1280x720.png" width="500" height="500">
+    </div>
+  <div id="DIVTHREE" style="display:none">
+    <img src="https://c.tenor.com/SfFIJdLwoSMAAAAM/walter-cute.gif" width="500" height="500">
+    </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  var b = document.getElementById("DIVTWO");
+  var g = document.getElementById("DIVTHREE");
+  b.style.display = "none";
+  g.style.display = "none";
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myOtherFunction() {
+  var x = document.getElementById("myDIV");
+  var b = document.getElementById("DIVTWO");
+  var g = document.getElementById("DIVTHREE");
+  x.style.display = "none";
+  g.style.display = "none";
+  if (b.style.display == "none") {
+    b.style.display = "block";
+  } else {
+    b.style.display = "none";
+  }
+}
+function myThirdFunction() {
+  var x = document.getElementById("myDIV");
+  var b = document.getElementById("DIVTWO");
+  var g = document.getElementById("DIVTHREE");
+  x.style.display = "none";
+  b.style.display = "none";
+  if (g.style.display == "none") {
+    g.style.display = "block";
+  } else {
+    g.style.display = "none";
+  }
+}
+</script>
+
+<footer>
+<a href="http://validator.w3.org/check/referer">
+<strong> HTML </strong> Valid! </a> |
+<a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+<strong> CSS </strong> Valid! </a>
+</footer>
+</body>
+</html>
